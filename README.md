@@ -6,6 +6,7 @@ This repository contains the work done by me in the duration of my internship at
 # List of Work Done
 
 1.	**Exploratory Data Analysis**
+
 Data corresponding to multiple vehicles were given to me. A legend containing the meaning of columns was also given to me. The vehicle data has 3 different types of features. One set of features come from the sensors like vehicle speed, motor speed, motor temperature, accelerator pedal, etc. The next set of features come from the BMS system, like SOC, DTE, etc. The final set of features come from the GPS system, like latitude, longitude, altitude, GPS speed, etc. The data also has different fault flags. The total no. of columns in each vehicle dataset file is 70. Each of the faults are given a code and a name. Different sets of fault codes are combined into a field. There are the following fault fields in the dataset: Fault Code 1, Fault Code 2, BMS Status 1, BMS Status 2, VDM Fault, BMS Relay State and BMS Failsafe Status. Remaining columns are features. 
 The aim of this project is to predict the occurrence of a fault a significant time (like 15 minutes) before it actually occurs so that some kind of user intervention is possible.
 First, some exploration of the data needs to be done and some insights need to be derived before modelling. 
@@ -13,6 +14,7 @@ Among the features, I have dropped out certain features marked in the legend as 
 ---
 
 ## Example:
+
 Code for CONTACTOR_STATE_INV fault = 32768. If fault_code1 field has value 49216, then 49216 & 32768 = 32768. So, this fault is present. Similarly, if it has value 30000, then 30000 & 32768 = 0. So, this fault is absent.
 ---
 
