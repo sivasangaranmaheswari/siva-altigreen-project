@@ -18,6 +18,8 @@ Among the features, I have dropped out certain features marked in the legend as 
 
 Code for CONTACTOR_STATE_INV fault = 32768. If fault_code1 field has value 49216, then 49216 & 32768 = 32768. So, this fault is present. Similarly, if it has value 30000, then 30000 & 32768 = 0. So, this fault is absent.
 
+![image](https://user-images.githubusercontent.com/108574731/182828661-3ff0c3b9-e221-4c25-8234-cd3c7731187d.png)
+
 ---
 
 2. **Visualizing the data**
