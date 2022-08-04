@@ -12,6 +12,7 @@ Data corresponding to multiple vehicles were given to me. A legend containing th
 The aim of this project is to predict the occurrence of a fault a significant time (like 15 minutes) before it actually occurs so that some kind of user intervention is possible.
 First, some exploration of the data needs to be done and some insights need to be derived before modelling. 
 Among the features, I have dropped out certain features marked in the legend as (Reserved) or (Not Applicable). Out of the remaining features, only one of them, FRN Status, is a categorical feature, and the rest are continuous features. Coming to the faults, each of the fault fields has a number which needs to be decoded using the legend file. Each fault field contains a number, which, when represented in binary format, each of its bits represents a fault. Doing bitwise AND of a fault field with a fault code from the legend gives its presence or absence in that record. In all, combining all the fault bits together, there are 86 faults. 
+
 ---
 ## Example:
 Code for CONTACTOR_STATE_INV fault = 32768. If fault_code1 field has value 49216, then 49216 & 32768 = 32768. So, this fault is present. Similarly, if it has value 30000, then 30000 & 32768 = 0. So, this fault is absent.
